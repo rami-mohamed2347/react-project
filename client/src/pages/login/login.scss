@@ -1,3 +1,4 @@
+@import "../../index.scss";
 .login {
   height: 100vh;
   background-color: rgb(193, 190, 255);
@@ -6,6 +7,10 @@
   justify-content: center;
 
   .card {
+    @include mobile {
+      width: 100%;
+    }
+
     width: 50%;
     display: flex;
     background-color: white;
@@ -13,6 +18,10 @@
     min-height: 600px;
     overflow: hidden;
     .left {
+      @include mobile {
+        display: none;
+      }
+
       flex: 1;
       background: linear-gradient(rgba(39, 11, 96, 0.5), rgba(39, 11, 96, 0.5)),
         url("https://images.pexels.com/photos/3228727/pexels-photo-3228727.jpeg")

@@ -4,10 +4,10 @@ dotenv.config();
 
 console.log(process.env.DB_USER);
 export const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: "sql11.freesqldatabase.com",
+  user: "sql11690135",
+  password: "EXVvq3iAeX",
+  database: "sql11690135",
 });
 
 db.connect(function (err) {
